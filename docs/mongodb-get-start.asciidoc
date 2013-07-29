@@ -1,0 +1,47 @@
+Install MongoDB
+---------------
+
+* use `root`
+----
+su - root
+----
+
+* Create a /etc/yum.repos.d/10gen.repo, add the below content:
+----
+[10gen]
+name=10gen Repository
+baseurl=http://downloads-distro.mongodb.org/repo/redhat/os/i686
+gpgcheck=0
+enabled=1
+----
+
+* Install
+----
+yum install mongo-10gen mongo-10gen-server
+----
+
+* Start
+----
+service mongod start
+----
+
+* Commands
+----
+mongo
+----
+
+----
+db
+----
+
+----
+show dbs
+----
+
+----
+use mydb
+----
+
+----
+help
+----
