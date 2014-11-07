@@ -15,7 +15,7 @@ public class HelloWorld {
 	
 	public static void main(String[] args) throws UnknownHostException {
 		
-		MongoClient mongo = new MongoClient("localhost", 27017);
+		MongoClient mongo = new MongoClient("10.66.218.46", 27017);
 		DB db = mongo.getDB("mydb");
 		
 		Set<String> collectionNames = db.getCollectionNames();
