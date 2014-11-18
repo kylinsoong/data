@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1557156/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html
+END
+HtmlHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/repos/asf/!svn/ver/947647/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/HtmlHelper.java
+END
+ToHtml.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/942809/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/ToHtml.java
+END
+HSSFHtmlHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/942809/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/HSSFHtmlHelper.java
+END
+XSSFHtmlHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/1144331/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/XSSFHtmlHelper.java
+END
+excelStyle.css
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/947647/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/excelStyle.css
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/asf/!svn/ver/1557156/poi/trunk/src/examples/src/org/apache/poi/ss/examples/html/package.html
+END

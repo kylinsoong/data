@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1636755/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples
+END
+HeadersAndFooters.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/HeadersAndFooters.java
+END
+EmbeddedObjects.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/1212744/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/EmbeddedObjects.java
+END
+CreateCell.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CreateCell.java
+END
+SplitAndFreezePanes.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/SplitAndFreezePanes.java
+END
+CustomXMLMapping.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1212744/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CustomXMLMapping.java
+END
+CreateUserDefinedDataFormats.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CreateUserDefinedDataFormats.java
+END
+Outlining.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/775731/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/Outlining.java
+END
+LineChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/1636755/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/LineChart.java
+END
+WorkbookProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkbookProperties.java
+END
+CreateTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1613191/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CreateTable.java
+END
+AligningCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/948709/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/AligningCells.java
+END
+MergingCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/MergingCells.java
+END
+BigGridDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1133782/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/BigGridDemo.java
+END
+FitSheetToOnePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/FitSheetToOnePage.java
+END
+CalendarDemo.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CalendarDemo.java
+END
+FillsAndColors.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/FillsAndColors.java
+END
+IterateCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1212744/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/IterateCells.java
+END
+HyperlinkExample.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1404642/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/HyperlinkExample.java
+END
+SelectedSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/SelectedSheet.java
+END
+CellComments.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/983630/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CellComments.java
+END
+WorkingWithFonts.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkingWithFonts.java
+END
+ScatterChart.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/1167579/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/ScatterChart.java
+END
+WorkingWithRichText.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkingWithRichText.java
+END
+ShiftRows.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/ShiftRows.java
+END
+WorkingWithPageSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkingWithPageSetup.java
+END
+WorkingWithPictures.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkingWithPictures.java
+END
+WorkingWithBorders.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/WorkingWithBorders.java
+END
+CreatePivotTable.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/1614684/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/CreatePivotTable.java
+END
+NewLinesInCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/826038/poi/trunk/src/examples/src/org/apache/poi/xssf/usermodel/examples/NewLinesInCells.java
+END

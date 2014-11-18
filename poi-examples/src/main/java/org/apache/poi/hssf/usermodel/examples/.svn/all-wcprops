@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/asf/!svn/ver/1296976/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples
+END
+Borders.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/Borders.java
+END
+EmeddedObjects.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1296976/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/EmeddedObjects.java
+END
+Outlines.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/Outlines.java
+END
+CellTypes.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/CellTypes.java
+END
+ReadWriteWorkbook.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/ReadWriteWorkbook.java
+END
+SplitAndFreezePanes.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/712084/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/SplitAndFreezePanes.java
+END
+NewWorkbook.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/712084/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/NewWorkbook.java
+END
+OfficeDrawing.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/OfficeDrawing.java
+END
+FrillsAndFills.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/FrillsAndFills.java
+END
+HSSFReadWrite.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/asf/!svn/ver/829897/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/HSSFReadWrite.java
+END
+AddDimensionedImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/asf/!svn/ver/923072/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/AddDimensionedImage.java
+END
+BigExample.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/BigExample.java
+END
+RepeatingRowsAndColumns.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/RepeatingRowsAndColumns.java
+END
+ZoomSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/712084/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/ZoomSheet.java
+END
+Alignment.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/Alignment.java
+END
+NewSheet.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/982260/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/NewSheet.java
+END
+CreateDateCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/CreateDateCells.java
+END
+OfficeDrawingWithGraphics.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/OfficeDrawingWithGraphics.java
+END
+InCellLists.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/800845/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/InCellLists.java
+END
+CellComments.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/949434/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/CellComments.java
+END
+MergedCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/MergedCells.java
+END
+CreateCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/CreateCells.java
+END
+WorkingWithFonts.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/WorkingWithFonts.java
+END
+Hyperlinks.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/asf/!svn/ver/826045/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/Hyperlinks.java
+END
+HyperlinkFormula.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/HyperlinkFormula.java
+END
+EventExample.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/712084/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/EventExample.java
+END
+NewLinesInCells.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/740179/poi/trunk/src/examples/src/org/apache/poi/hssf/usermodel/examples/NewLinesInCells.java
+END

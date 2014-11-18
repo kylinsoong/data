@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/repos/asf/!svn/ver/1634255/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser
+END
+PropertySetDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/PropertySetDescriptor.java
+END
+ExtendableTreeCellRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/ExtendableTreeCellRenderer.java
+END
+DocumentDescriptorRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/DocumentDescriptorRenderer.java
+END
+PropertySetDescriptorRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/PropertySetDescriptorRenderer.java
+END
+TreeReaderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1634255/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/TreeReaderListener.java
+END
+POIBrowser.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/1634255/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/POIBrowser.java
+END
+Codec.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/Codec.java
+END
+DocumentDescriptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/DocumentDescriptor.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/repos/asf/!svn/ver/1024286/poi/trunk/src/examples/src/org/apache/poi/poifs/poibrowser/Util.java
+END

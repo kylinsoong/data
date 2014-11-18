@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/repos/asf/!svn/ver/1557156/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush
+END
+PendingPaintings.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/asf/!svn/ver/942809/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush/PendingPaintings.java
+END
+DoubleStroke.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/asf/!svn/ver/942809/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush/DoubleStroke.java
+END
+Brush.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/repos/asf/!svn/ver/947647/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush/Brush.java
+END
+BasicBrush.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/repos/asf/!svn/ver/942809/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush/BasicBrush.java
+END
+package.html
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/asf/!svn/ver/1557156/poi/trunk/src/examples/src/org/apache/poi/hssf/view/brush/package.html
+END
