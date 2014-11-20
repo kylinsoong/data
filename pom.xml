@@ -21,6 +21,7 @@
 	<module>cassandra-quickstart</module>
 	<module>mongodb-quickstart</module>
 	<module>poi-examples</module>
+	<module>poi-examples-teiid</module>
     </modules>
 
 </project>

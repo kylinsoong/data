@@ -311,18 +311,20 @@ public class XLS2CSVmra implements HSSFListener {
 	}
 
 	public static void main(String[] args) throws Exception {
-		if(args.length < 1) {
-			System.err.println("Use:");
-			System.err.println("  XLS2CSVmra <xls file> [min columns]");
-			System.exit(1);
-		}
+//		if(args.length < 1) {
+//			System.err.println("Use:");
+//			System.err.println("  XLS2CSVmra <xls file> [min columns]");
+//			System.exit(1);
+//		}
+//
+//		int minColumns = -1;
+//		if(args.length >= 2) {
+//			minColumns = Integer.parseInt(args[1]);
+//		}
 
-		int minColumns = -1;
-		if(args.length >= 2) {
-			minColumns = Integer.parseInt(args[1]);
-		}
-
-		XLS2CSVmra xls2csv = new XLS2CSVmra(args[0], minColumns);
+		String path = "/home/kylin/project/teiid-samples/teiid-quickstart/src/file/otherholdings.xls";
+		
+		XLS2CSVmra xls2csv = new XLS2CSVmra(path, 3);
 		xls2csv.process();
 	}
 }
