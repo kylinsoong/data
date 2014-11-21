@@ -22,6 +22,7 @@
 	<module>mongodb-quickstart</module>
 	<module>poi-examples</module>
 	<module>poi-examples-teiid</module>
+	<module>hbase-quickstart</module>
     </modules>
 
 </project>
