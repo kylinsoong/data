@@ -23,6 +23,7 @@
 	<module>poi-examples</module>
 	<module>poi-examples-teiid</module>
 	<module>hbase-quickstart</module>
+	<module>phoenix-quickstart</module>
     </modules>
 
 </project>
