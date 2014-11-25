@@ -6,7 +6,15 @@
 	<groupId>com.salesforce.phoenix</groupId>
 	<artifactId>phoenix-quickstart</artifactId>
 	<version>1.0</version>
-	<name>Cassandra Quick Start</name>
+	<name>Phoenix Quick Start</name>
+
+	<repositories>
+		<repository>
+			<id>apache release</id>
+			<url>https://repository.apache.org/content/repositories/releases/</url>
+		</repository>
+	</repositories>
+
 	<dependencies>
 
 		<dependency>

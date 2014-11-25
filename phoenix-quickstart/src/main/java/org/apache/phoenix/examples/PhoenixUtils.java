@@ -1,4 +1,4 @@
-package org.apache.hadoop.hbase.examples.phoenix;
+package org.apache.phoenix.examples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

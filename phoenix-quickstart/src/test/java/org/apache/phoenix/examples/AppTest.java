@@ -1,4 +1,4 @@
-package org.apache.hadoop.hbase.examples;
+package org.apache.phoenix.examples;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

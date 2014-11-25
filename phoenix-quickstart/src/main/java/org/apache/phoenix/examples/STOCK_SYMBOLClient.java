@@ -1,8 +1,8 @@
-package org.apache.hadoop.hbase.examples.phoenix;
+package org.apache.phoenix.examples;
 
 import java.sql.Connection;
 
-public class BlogClient {
+public class STOCK_SYMBOLClient {
 
 	public static void main(String[] args) throws Exception {
 		
