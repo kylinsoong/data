@@ -13,7 +13,7 @@ public class CustomerClient {
 		MongoClient mongo = new MongoClient("10.66.218.46", 27017);
 		DB db = mongo.getDB("mydb");
 		
-		DBCollection conn = db.getCollection("Employee");
+		DBCollection conn = db.getCollection("Customer");
 		
 //		conn.drop();
 		
