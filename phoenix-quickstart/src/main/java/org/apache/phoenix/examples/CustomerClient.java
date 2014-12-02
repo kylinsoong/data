@@ -2,7 +2,20 @@ package org.apache.phoenix.examples;
 
 import java.sql.Connection;
 
+import org.apache.log4j.ConsoleAppender;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PatternLayout;
+
 public class CustomerClient {
+	
+	static {
+	      String pattern = "[%d{ABSOLUTE}] [%t] %5p (%F:%L) - %m%n";
+	      PatternLayout layout = new PatternLayout(pattern);
+	      ConsoleAppender consoleAppender = new ConsoleAppender(layout);
+	      Logger.getRootLogger().setLevel(Level.DEBUG);
+	      Logger.getRootLogger().addAppender(consoleAppender);  
+		}
 
 	public static void main(String[] args) throws Exception {
 
