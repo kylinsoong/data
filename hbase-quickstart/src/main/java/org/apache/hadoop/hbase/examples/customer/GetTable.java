@@ -17,17 +17,17 @@ import org.apache.log4j.PatternLayout;
 public class GetTable {
 	
 	static {
-        Logger.getLogger("org.apache.hadoop.hbase.client").setLevel(Level.INFO);
+//        Logger.getLogger("org.apache.hadoop.hbase.client").setLevel(Level.INFO);
         String pattern = "[%d{ABSOLUTE}] [%t] %5p (%F:%L) - %m%n";
         PatternLayout layout = new PatternLayout(pattern);
         ConsoleAppender consoleAppender = new ConsoleAppender(layout);
-        Logger.getRootLogger().setLevel(Level.INFO);
+        Logger.getRootLogger().setLevel(Level.DEBUG);
         Logger.getRootLogger().addAppender(consoleAppender);  
 	}
 
 	public static void main(String[] args) throws IOException {
 		Configuration conf = HBaseConfiguration.create();
-		conf.set("hbase.client.operation.timeout", "5000");
+		conf.set("hbase.client.operation.timeout", "2000");
 		HTable table = new HTable(conf, "Customer");
 		Get get = new Get("101".getBytes());
 		get.addFamily("customer".getBytes());
