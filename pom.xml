@@ -24,6 +24,7 @@
 	<module>poi-examples-teiid</module>
 	<module>hbase-quickstart</module>
 	<module>phoenix-quickstart</module>
+	<module>zookeeper-tutorials</module>
     </modules>
 
 </project>
