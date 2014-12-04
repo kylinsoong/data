@@ -10,7 +10,7 @@ import org.apache.log4j.PatternLayout;
 public class CustomerClient {
 	
 	static {
-	      String pattern = "[%d{ABSOLUTE}] [%t] %5p (%F:%L) - %m%n";
+	      String pattern = "%d %-5p [%c] (%t) %m%n";
 	      PatternLayout layout = new PatternLayout(pattern);
 	      ConsoleAppender consoleAppender = new ConsoleAppender(layout);
 	      Logger.getRootLogger().setLevel(Level.DEBUG);
