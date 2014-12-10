@@ -69,6 +69,7 @@ public class JDBCUtil {
 			for(int i = 1 ; i <= columns ; i ++) {
 				System.out.print(metadata.getColumnName(i) + "/" + metadata.getColumnTypeName(i) + "  ");
 			}
+			System.out.println("\n");
 		} catch (Exception e) {
 			throw e ;
 		} finally {
@@ -154,6 +155,7 @@ public class JDBCUtil {
 
 	public static boolean executeUpdate(Connection conn, String sql) throws Exception {
 		
+		System.out.println("Update SQL: " + sql);
 		
 		Statement stmt = null;
 		

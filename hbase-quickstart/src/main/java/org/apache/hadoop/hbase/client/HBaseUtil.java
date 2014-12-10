@@ -25,19 +25,23 @@ public class HBaseUtil {
 	
 	public void scanTable(String name) throws IOException {
 		
-		System.out.println("-------------Scan table '" + name + "' start");
+		System.out.println("Scan table '" + name + "'");
 		
 		Configuration conf = HBaseConfiguration.create();
 		HTable table = new HTable(conf, name);
 		Scan scan = new Scan();
 		ResultScanner rs = table.getScanner(scan);
 		try {
+			boolean isFirst = true;
 			Table tables = new Table();
 			for (Result r = rs.next(); r != null; r = rs.next()){
-				for(Cell cell : r.rawCells()) {
-					tables.addCell(CellUtil.cloneRow(cell), CellUtil.cloneValue(cell));
-				}
+				initTable(r, tables);
+//				for(Cell cell : r.rawCells()) {
+//					tables.addCell(CellUtil.cloneRow(cell), CellUtil.cloneValue(cell));
+//				}
 			}
+			
+			isFirst = true;
 			
 			System.out.println(tables);
 			
@@ -45,9 +49,25 @@ public class HBaseUtil {
 			  rs.close();
 		}
 		table.close();
-		System.out.println("-------------Scan table '" + name + "' end");
 	}
 	
+	
+	boolean isFirst = true;
+	
+	private void initTable(Result result, Table tables) {
+				
+		NavigableMap<byte[], NavigableMap<byte[], NavigableMap<Long, byte[]>>> valueMap = result.getMap();
+		for(byte[] key : valueMap.keySet()) {
+			NavigableMap<byte[], NavigableMap<Long, byte[]>> value = valueMap.get(key);
+			for(byte[] qualifier : value.keySet()) {
+				NavigableMap<Long, byte[]> cell = value.get(qualifier);
+				for(Long timestamp : cell.keySet()) {
+					tables.addCell(result.getRow(), cell.get(timestamp));
+				}
+			}
+		}
+	}
+
 	public void tableFormatOutput(Result result){
 		for(Cell cell : result.rawCells()) {
 			System.out.print(CellUtil.cloneRow(cell) + "   ");
@@ -77,6 +97,24 @@ public class HBaseUtil {
 				map.put(rowid, celllist);
 			} else {
 				map.get(rowid).add(cellval);
+			}
+		}
+		
+		public void addCell(String row, String cell) {
+			
+			if(row.length() > keySize) {
+				keySize = row.length();
+			}
+			
+			if(cell.length() > cellSize) {
+				cellSize = cell.length();
+			}
+			
+			if(map.get(row) == null) {
+				List<String> celllist = new ArrayList<String>();
+				map.put(row, celllist);
+			} else {
+				map.get(row).add(cell);
 			}
 		}
 

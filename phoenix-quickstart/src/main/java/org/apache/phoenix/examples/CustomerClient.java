@@ -13,14 +13,15 @@ public class CustomerClient {
 	      String pattern = "%d %-5p [%c] (%t) %m%n";
 	      PatternLayout layout = new PatternLayout(pattern);
 	      ConsoleAppender consoleAppender = new ConsoleAppender(layout);
-	      Logger.getRootLogger().setLevel(Level.DEBUG);
+	      Logger.getRootLogger().setLevel(Level.INFO);
 	      Logger.getRootLogger().addAppender(consoleAppender);  
 		}
 
 	public static void main(String[] args) throws Exception {
 
 		Connection conn = PhoenixUtils.getPhoenixConnection("127.0.0.1:2181");
-		JDBCUtil.executeQuery(conn, "SELECT * FROM Customer");
+		JDBCUtil.printTableColumn(conn, "SELECT * FROM \"Customer\"");
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
 		JDBCUtil.close(conn);
 	}
 
