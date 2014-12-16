@@ -65,6 +65,22 @@ public class HBaseTableMappingTest {
 		
 		JDBCUtil.executeQuery(conn, "SELECT t1.PK, t1.\"qualifier1\", t1.\"qualifier3\", t1.\"qualifier3\" FROM \"t1\" AS t1");
 	}
+	
+	@Test
+	public void testCustomerTableMapping() throws Exception {
+//		String ddl = "CREATE TABLE IF NOT EXISTS \"Customer\" (\"Row_Id\" VARCHAR, \"customer\".\"name\" VARCHAR, \"customer\".\"city\" VARCHAR, CONSTRAINT PK_\"Customer\" PRIMARY KEY (\"Row_Id\"))";
+		
+		String ddl = "CREATE TABLE IF NOT EXISTS \"Customer\" (\"Row_Id\" VARCHAR PRIMARY KEY, \"customer\".\"name\" VARCHAR, \"customer\".\"city\" VARCHAR, \"sales\".\"product\" VARCHAR, \"sales\".\"amount\" VARCHAR)";
+		JDBCUtil.executeUpdate(conn, ddl);
+		
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
+		
+		JDBCUtil.printTableColumn(conn, "SELECT * FROM \"Customer\"");
+		
+		JDBCUtil.executeQuery(conn, "SELECT \"ROW_ID\", \"city\", \"name\", \"amount\", \"product\" FROM \"Customer\"");
+		
+		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer");
+	}
 
 	protected void prepareData() throws MasterNotRunningException, ZooKeeperConnectionException, IOException {
 		FAQHBaseTableDeletion.main(new String[]{});
