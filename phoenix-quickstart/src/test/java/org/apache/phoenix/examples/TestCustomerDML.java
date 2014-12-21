@@ -34,28 +34,67 @@ public class TestCustomerDML {
 	}
 	
 	@Test
+	public void testInsert() throws Exception{
+		JDBCUtil.executeUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES ('106', 'Beijing', 'Kylin Soong', '$8000.00', 'Crystal Orange')");
+		JDBCUtil.executeUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES ('107', 'Beijing', 'Kylin Soong', '$8000.00', 'Crystal Orange')");
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
+	}
+	
+	@Test
+	public void testBatchedInsert() throws Exception {
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES (?, ?, ?, ?, ?)", 3);
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" VALUES (?, ?, ?, ?, ?)", 4);
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
+	}
+	
+	
+	
+	@Test
 	public void testSelect() throws Exception {
 		
 		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
 				
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"city\", customer.\"amount\" FROM \"Customer\" AS customer");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"city\", Customer.\"amount\" FROM \"Customer\" AS Customer");
 		
-		JDBCUtil.executeQuery(conn, "SELECT DISTINCT customer.\"city\" FROM \"Customer\" AS customer");
+		JDBCUtil.executeQuery(conn, "SELECT DISTINCT Customer.\"city\" FROM \"Customer\" AS Customer");
 		
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"city\", customer.\"amount\" FROM \"Customer\" AS customer WHERE customer.\"ROW_ID\" = '104'");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"city\", Customer.\"amount\" FROM \"Customer\" AS Customer WHERE Customer.\"ROW_ID\" = '105'");
 		
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"city\", Customer.\"amount\" FROM \"Customer\" AS Customer WHERE Customer.\"ROW_ID\" = '105' OR Customer.\"name\" = 'John White'");
+		
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"city\", Customer.\"amount\" FROM \"Customer\" AS Customer WHERE Customer.\"ROW_ID\" = '105' AND Customer.\"name\" = 'John White'");
 	}
 	
 	@Test
 	public void testSelectOrderBy() throws Exception {
 
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer ORDER BY customer.\"ROW_ID\"");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"ROW_ID\", Customer.\"city\", Customer.\"name\", Customer.\"amount\", Customer.\"product\" FROM \"Customer\" AS Customer ORDER BY Customer.\"ROW_ID\"");
 		
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer ORDER BY customer.\"ROW_ID\" ASC");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"ROW_ID\", Customer.\"city\", Customer.\"name\", Customer.\"amount\", Customer.\"product\" FROM \"Customer\" AS Customer ORDER BY Customer.\"ROW_ID\" ASC");
 		
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer ORDER BY customer.\"ROW_ID\" DESC");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"ROW_ID\", Customer.\"city\", Customer.\"name\", Customer.\"amount\", Customer.\"product\" FROM \"Customer\" AS Customer ORDER BY Customer.\"ROW_ID\" DESC");
 	
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer ORDER BY customer.\"name\", customer.\"city\" DESC");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"ROW_ID\", Customer.\"city\", Customer.\"name\", Customer.\"amount\", Customer.\"product\" FROM \"Customer\" AS Customer ORDER BY Customer.\"name\", Customer.\"city\" DESC");
+	}
+	
+	@Test
+	public void testSelectGroupBy() throws Exception{
+		
+		JDBCUtil.executeQuery(conn, "SELECT COUNT(Customer.\"ROW_ID\") FROM \"Customer\" AS Customer WHERE Customer.\"name\" = 'John White'");
+
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"name\", COUNT(Customer.\"ROW_ID\") FROM \"Customer\" AS Customer GROUP BY Customer.\"name\"");
+		
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"name\", COUNT(Customer.\"ROW_ID\") FROM \"Customer\" AS Customer GROUP BY Customer.\"name\" HAVING COUNT(Customer.\"ROW_ID\") > 1");
+		
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"name\", Customer.\"city\", COUNT(Customer.\"ROW_ID\") FROM \"Customer\" AS Customer GROUP BY Customer.\"name\", Customer.\"city\"");
+		
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"name\", Customer.\"city\", COUNT(Customer.\"ROW_ID\") FROM \"Customer\" AS Customer GROUP BY Customer.\"name\", Customer.\"city\" HAVING COUNT(Customer.\"ROW_ID\") > 1");
+	}
+	
+	@Test
+	public void testSelectLimit() throws Exception{
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
+		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\" LIMIT 3");
 	}
 	
 	@Test
@@ -70,7 +109,7 @@ public class TestCustomerDML {
 		
 		JDBCUtil.executeQuery(conn, "SELECT \"ROW_ID\", \"city\", \"name\", \"amount\", \"product\" FROM \"Customer\"");
 		
-		JDBCUtil.executeQuery(conn, "SELECT customer.\"ROW_ID\", customer.\"city\", customer.\"name\", customer.\"amount\", customer.\"product\" FROM \"Customer\" AS customer");
+		JDBCUtil.executeQuery(conn, "SELECT Customer.\"ROW_ID\", Customer.\"city\", Customer.\"name\", Customer.\"amount\", Customer.\"product\" FROM \"Customer\" AS Customer");
 	}
 
 }

@@ -2,6 +2,7 @@ package org.apache.phoenix.examples;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.SQLException;
@@ -169,6 +170,32 @@ public class JDBCUtil {
 		}
 		
 		return true ;
+	}
+
+	public static void executeBatchedUpdate(Connection conn, String sql, int size) throws SQLException {
+
+		System.out.println("Update SQL: " + sql);
+		
+		PreparedStatement pstmt = null ;
+		try {
+			pstmt = conn.prepareStatement(sql);
+			for(int i = 0 ; i < size ; i ++) {
+				pstmt.setString(1, 110 + i + "");
+				pstmt.setString(2, "Beijng");
+				pstmt.setString(3, "Kylin Soong");
+				pstmt.setString(4, "$8000.00");
+				pstmt.setString(5, "Crystal Orange");
+				pstmt.addBatch();
+			}
+			pstmt.executeBatch();
+			if(!conn.getAutoCommit()) {
+				conn.commit();
+			}
+		} catch (SQLException e) {
+			throw e;
+		} finally {
+			close(pstmt);
+		}
 	}
 
 }
