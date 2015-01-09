@@ -70,7 +70,7 @@ public class HBaseTableMappingTest {
 	public void testCustomerTableMapping() throws Exception {
 //		String ddl = "CREATE TABLE IF NOT EXISTS \"Customer\" (\"Row_Id\" VARCHAR, \"customer\".\"name\" VARCHAR, \"customer\".\"city\" VARCHAR, CONSTRAINT PK_\"Customer\" PRIMARY KEY (\"Row_Id\"))";
 		
-		String ddl = "CREATE TABLE IF NOT EXISTS \"Customer\" (\"Row_Id\" VARCHAR PRIMARY KEY, \"customer\".\"name\" VARCHAR, \"customer\".\"city\" VARCHAR, \"sales\".\"product\" VARCHAR, \"sales\".\"amount\" VARCHAR)";
+		String ddl = "CREATE TABLE IF NOT EXISTS \"Customer\" (\"Row_ID\" VARCHAR PRIMARY KEY, \"customer\".\"name\" VARCHAR, \"customer\".\"city\" VARCHAR, \"sales\".\"product\" VARCHAR, \"sales\".\"amount\" VARCHAR)";
 		JDBCUtil.executeUpdate(conn, ddl);
 		
 		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
