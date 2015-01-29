@@ -42,8 +42,10 @@ public class TestCustomerDML {
 	
 	@Test
 	public void testBatchedInsert() throws Exception {
-		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES (?, ?, ?, ?, ?)", 3);
-		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" VALUES (?, ?, ?, ?, ?)", 4);
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES (?, ?, ?, ?, ?)", 1);
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" (\"ROW_ID\", \"city\", \"name\", \"amount\", \"product\") VALUES (?, ?, ?, ?, ?)", 10);
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" VALUES (?, ?, ?, ?, ?)", 1);
+		JDBCUtil.executeBatchedUpdate(conn, "UPSERT INTO \"Customer\" VALUES (?, ?, ?, ?, ?)", 10);
 		JDBCUtil.executeQuery(conn, "SELECT * FROM \"Customer\"");
 	}
 	

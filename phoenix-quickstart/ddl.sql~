@@ -13,7 +13,3 @@ SELECT * FROM \"Customer\"
 SELECT \"city\", \"amount\" FROM \"Customer\"
 SELECT DISTINCT \"city\" FROM \"Customer\"
 SELECT \"city\", \"amount\" FROM \"Customer\" WHERE \"ROW_ID\"='105'
-
-SELECT * FROM \"Customer\" WHERE \"ROW_ID\"='105' OR \"name\"='John White'
-SELECT * FROM \"Customer\" WHERE \"ROW_ID\"='105' AND \"name\"='John White'
-SELECT * FROM \"Customer\" WHERE \"ROW_ID\"='105' AND (\"name\"='John White' OR \"name\"='Kylin Soong')

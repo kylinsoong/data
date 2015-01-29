@@ -33,13 +33,17 @@ private static Connection conn;
 	
 	@Test
 	public void testCreateTable() throws Exception {
-		JDBCUtil.executeUpdate(conn, "CREATE TABLE IF NOT EXISTS \"TimesTest2\" (\"ROW_ID\" VARCHAR PRIMARY KEY, \"f\".\"q\" TIMESTAMP)");
+		JDBCUtil.executeUpdate(conn, "CREATE TABLE IF NOT EXISTS \"TimesTest3\" (\"ROW_ID\" VARCHAR PRIMARY KEY, \"f\".\"q\"  UNSIGNED_TIMESTAMP)");
 	}
 	
 	@Test
 	public void testInsert() throws SQLException {
+		
+		Calendar cal = Calendar.getInstance();
+		cal.setTimeZone(TimeZone.getDefault());
+		
 		Timestamp timestramp = new Timestamp(new java.util.Date().getTime());
-		String sql = "UPSERT INTO \"TimesTest2\" (\"ROW_ID\", \"q\") VALUES (?, ?)";
+		String sql = "UPSERT INTO \"TimesTest3\" (\"ROW_ID\", \"q\") VALUES (?, ?)";
 		PreparedStatement pstmt = conn.prepareStatement(sql);
 		
 		pstmt.setString(1, "100");
@@ -54,7 +58,11 @@ private static Connection conn;
 	
 	@Test
 	public void testSelect() throws Exception {
-		String sql = "SELECT * FROM \"TimesTest2\"";
+		
+		Calendar cal = Calendar.getInstance();
+		cal.setTimeZone(TimeZone.getDefault());
+		
+		String sql = "SELECT * FROM \"TimesTest3\"";
 		Statement stmt = conn.createStatement();
 		ResultSet rs = stmt.executeQuery(sql);
 		while(rs.next()){
@@ -65,7 +73,7 @@ private static Connection conn;
 	public static void main(String[ ] args) throws Exception {
 		init();
 		
-		new BugReproduce().testInsert();
+		new BugReproduce().testSelect();
 		
 		close();
 	}

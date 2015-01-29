@@ -3,6 +3,8 @@ package org.apache.phoenix.examples;
 import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
@@ -28,8 +30,8 @@ public class JDBCMetdataTest {
 		String quoteString = metadata.getIdentifierQuoteString();
 		System.out.println(quoteString);
 		
-		ResultSet rs = metadata.getTypeInfo();
-
+		ResultSet rs = metadata.getTables(null, null, null, null);
+		printColumnNameType(rs);
 		while (rs.next()) {
 			String name = rs.getString(1);
 			boolean unsigned = rs.getBoolean(10);
@@ -38,5 +40,14 @@ public class JDBCMetdataTest {
 		
 
 		JDBCUtil.close(conn);
+	}
+	
+	private static void printColumnNameType(ResultSet rs) throws SQLException {
+		ResultSetMetaData metadata = rs.getMetaData();
+		int columns = metadata.getColumnCount();
+		for(int i = 1 ; i <= columns ; i ++) {
+			System.out.print(i + ": " + metadata.getColumnName(i) + "/" + metadata.getColumnTypeName(i) + " ");
+		}
+		System.out.println();
 	}
 }
