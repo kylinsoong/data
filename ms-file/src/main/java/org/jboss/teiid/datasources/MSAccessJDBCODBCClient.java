@@ -1,4 +1,4 @@
-package org.jboss.teeid.datasources;
+package org.jboss.teiid.datasources;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
