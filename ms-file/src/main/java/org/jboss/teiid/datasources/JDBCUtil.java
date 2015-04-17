@@ -125,7 +125,8 @@ public class JDBCUtil {
 					if (i > 0) {
 						System.out.print(", ");
 					}
-					System.out.print(rs.getString(i + 1));
+					Object obj = rs.getObject(i + 1);
+					System.out.print(obj);
 				}
 				System.out.println();
 			}

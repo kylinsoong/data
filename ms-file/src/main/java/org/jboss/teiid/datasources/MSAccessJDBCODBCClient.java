@@ -23,6 +23,8 @@ public class MSAccessJDBCODBCClient {
 		
 		JDBCUtil.executeQuery(conn, "SELECT * FROM EmpData_test");
 		
+		
+		
 		JDBCUtil.close(conn);
 	}
 
