@@ -16,12 +16,6 @@ ou: Groups
 description: Example.Com Groups
 objectClass: organizationalUnit
 
-# Subtree for system accounts
-dn: ou=System,dc=example,dc=com
-ou: System
-description: Special accounts used by software applications.
-objectClass: organizationalUnit
-
 # Luigi Fugaro:
 dn: uid=lfugaro,ou=Users,dc=example,dc=com
 ou: Users
