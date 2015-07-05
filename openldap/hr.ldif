@@ -1,0 +1,64 @@
+dn: ou=HR,dc=example,dc=com
+objectClass: top
+objectClass: organizationalunit
+ou: HR
+
+dn: uid=hr1,ou=HR,dc=example,dc=com
+sn: hr 1
+givenName: name
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+gidNumber: 6592
+uidNumber: 19920
+mail: hr1@mail.com
+uid: hr1
+cn: HR One
+homeDirectory: /home/hr1
+gecos: hr1
+loginShell: /bin/bash
+shadowLastChange: 15807
+userPassword: redhat
+
+dn: uid=hr2,ou=HR,dc=example,dc=com
+sn: hr 2
+givenName: name
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+gidNumber: 6593
+uidNumber: 19921
+mail: hr2@mail.com
+uid: hr2
+cn: HR Two
+homeDirectory: /home/hr2
+gecos: hr2
+loginShell: /bin/bash
+shadowLastChange: 15807
+userPassword: redhat
+
+dn: uid=hr3,ou=HR,dc=example,dc=com
+sn: hr 3
+givenName: name
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+gidNumber: 6594
+uidNumber: 19922
+mail: hr3@mail.com
+uid: hr3
+cn: HR Three
+homeDirectory: /home/hr3
+gecos: hr3
+loginShell: /bin/bash
+shadowLastChange: 15807
+userPassword: redhat
