@@ -16,7 +16,7 @@ public class Util {
 
         String path = HADOOP_HOME + File.separator + INPUT;
         
-        for(int i = 0 ; i < 1000 ; i ++){
+        for(int i = 0 ; i < 10 ; i ++){
             writeFile(new File(path));
         }
         
