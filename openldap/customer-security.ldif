@@ -1,9 +1,16 @@
+# JAAS Users
 dn: ou=Customers,dc=example,dc=com
 ou: Customers
-description: Example.Com 
+description: JAAS Users
 objectClass: organizationalUnit
 
-# Kylin Soong:
+# JAAS Roles
+dn: ou=Roles,dc=example,dc=com
+ou: Roles
+description: JAAS Roles
+objectClass: organizationalUnit
+
+# User
 dn: uid=kylin,ou=Customers,dc=example,dc=com
 ou: Customers
 uid: kylin
@@ -17,7 +24,6 @@ objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 
-# User Tests:
 dn: uid=user1,ou=Customers,dc=example,dc=com
 ou: Customers
 uid: user1
@@ -44,13 +50,11 @@ objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 
-# Groups
-dn: ou=Tester,dc=example,dc=com
-ou: Tester
-cn: Group Test
-description: Users who are test
+# Group:
+dn: cn=Tester,ou=Roles,dc=example,dc=com
+cn: Tester
+description: Roles Tester
+objectClass: groupOfUniqueNames
 uniqueMember: uid=kylin,ou=Customers,dc=example,dc=com
 uniqueMember: uid=user1,ou=Customers,dc=example,dc=com
 uniqueMember: uid=user2,ou=Customers,dc=example,dc=com
-objectClass: groupOfUniqueNames
-

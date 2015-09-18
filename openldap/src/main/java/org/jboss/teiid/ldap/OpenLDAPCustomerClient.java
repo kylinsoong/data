@@ -43,7 +43,7 @@ public class OpenLDAPCustomerClient {
             System.out.println(attrs.get("sn").get());
         }
         
-        Attributes attrs = ctx.getAttributes("ou=Tester,dc=example,dc=com");
+        Attributes attrs = ctx.getAttributes("cn=Tester,ou=Roles,dc=example,dc=com");
         Attribute attr = attrs.get("uniquemember");
         NamingEnumeration<?> nem = attr.getAll();
         System.out.println(attr);
